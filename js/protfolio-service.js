@@ -11,11 +11,9 @@ function getProjects() {
 
 function createProjects() {
     var projects = [
-        createProj('Minesweeper', 'fun game', 'i will tell you more. wait few hours', 'sprint1'),
-    //     createProj('Minesweeper', 'fun game', 'i will tell you more. wait few hours', ['',]),
-    //     createProj('Minesweeper', 'fun game', 'i will tell you more. wait few hours', 'sprint1'),
-    //     createProj('Minesweeper', 'fun game', 'i will tell you more. wait few hours', 'sprint1'),
-    
+        createProj('Minesweeper', 'fun game', 'i will tell you more. wait few hours', 'sprint1',),
+        createProj('In-Picture-Game', 'another fun game', 'i will tell you more. wait few hours', 'js' )
+
     ]
 
     gProjects = projects
@@ -30,7 +28,7 @@ function createProj(projectName, title, description, labels) {
         title: title,
         desc: description,
         url: ` https://jordanpesso.github.io/${projectName}/`,
-        imgUrl: `'img/portfolio/${projectName}.png'`,
+        imgUrl: `img/portfolio/${projectName}.png`,
         publisheAt: new Date(),
         client: 'coding academy',
         labels: labels
@@ -41,3 +39,4 @@ function createProj(projectName, title, description, labels) {
 
 
 // labels: ['sprint1', 'matrix', 'java script'],
+
