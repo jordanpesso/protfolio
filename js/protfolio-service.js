@@ -24,8 +24,8 @@ function createProjects() {
 function createProj(projectName, title, description, labels) {
     return {
         id: gProjId++,
-        projectName: projectName,
-        title: title,
+        projectName,
+        title,
         desc: description,
         url: ` https://jordanpesso.github.io/${projectName}/`,
         imgUrl: `img/portfolio/${projectName}.png`,
